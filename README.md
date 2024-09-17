@@ -1,6 +1,6 @@
- HEAD
+
 # FundamentosDART_210562 
-=======
+
 # FundamentosDART_210562
 ----
 **DESCRIPCIÓN**
@@ -18,4 +18,4 @@ Proyecto de cCase para la Unidad 1 de la Asignatura de Desarrollo Móvil integra
 
 ## AUTOR
 Elaborado por: Jose Angel Gomez Ortiz [Husbam](https://github.com/Husbam)
->>>>>>> bed004f4bcb64f37bd97ab98472f33d08fc7e10d
+
