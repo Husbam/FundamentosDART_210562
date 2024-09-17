@@ -15,8 +15,7 @@ void main() {
   
   //Pero al ser dinamico le podemos asignar un entero
   errorMessage = 404;
- 
-  print("""------------------------------------------------ 
+   print("""------------------------------------------------ 
   El nuevo valor de errorMessage es: $errorMessage
   En algunios sitemas de errores son controlados por un codigo numerico""");
   
