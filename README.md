@@ -10,8 +10,8 @@ Proyecto de cCase para la Unidad 1 de la Asignatura de Desarrollo Móvil integra
 |No.|Nombre|Potenciador|Estatus|
 |--|--|--|--|
 |1|Metodologia de Evaluación de la Asignatura|1|Finalizada|
-|2|Instalacion y Configuración del entorno de Desarrollo de Flutter/Dart|23|Activa|
-|3|Hola Mundo desde DART| 10|Activa|
+|2|Instalacion y Configuración del entorno de Desarrollo de Flutter/Dart|23|Finalizada|
+|3|Hola Mundo desde DART| 10|Finalizada|
 |4|Tipos de datos en DART|5|Activa|
 
 ### LISTA DE HERRAMIENTAS
