@@ -1,6 +1,4 @@
 
-# FundamentosDART_210562 
-
 # FundamentosDART_210562
 ----
 **DESCRIPCIÓN**
