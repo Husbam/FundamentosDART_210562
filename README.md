@@ -5,7 +5,7 @@
 Proyecto de Caso para la Unidad 1 de la Asignatura de Desarrollo Móvil Integral (DMI) impartida por M.T.I. Marco A. Ramirez Hernandez
 
 ## HISTORIAL DE PRACTICAS
-|No.|Nombre|Potenciador|Estatus|
+|No.|Nómbre|Potenciador|Estatus|
 |--|--|--|--|
 |1|Metodologia de Evaluación de la Asignatura|1|Finalizada|
 |2|Instalacion y Configuración del entorno de Desarrollo de Flutter/Dart|23|Finalizada|
