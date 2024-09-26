@@ -66,6 +66,7 @@ String greetSomeone(dynamic personName) {
 // 4. FUNCIÓN CON PARÁMETROS OPCIONALES
 String greetHourOfDay(String personName, [int? hora]) {
     hora ??= DateTime.now().hour; // Si hora es null, se asigna la fecha actual
+    print("Hora:${hora}");
     String saludo;
 
     if (hora >= 6 && hora < 12) {
