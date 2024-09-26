@@ -14,7 +14,7 @@ Proyecto de Caso para la Unidad 1, de la Asignatura de Desarrollo Móvil Integra
 |5|Tipos de Datos Dinamico|5|Finalizada|
 |6|Mapa|6|Finalizada|
 |7|Listas, Iterables Y Conjuntos de Datos|9|Activa|
-|8|Funciones|10|Activa|
+|8|Funciones|11|Activa|
 
 ### LISTA DE HERRAMIENTAS
 ![DART](https://img.shields.io/badge/Dart-0175C2?style-for-the-badge&logo=dart&logoColor=white)
