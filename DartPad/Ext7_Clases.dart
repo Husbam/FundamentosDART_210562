@@ -18,10 +18,13 @@ void main(){
     print(xmen.name);
     print(xmen.type);
 
-    final justiceLeague = Team(name:"L aliga de la Justicia");
+    final justiceLeague = Team(name:"La liga de la Justicia");
     print(justiceLeague);
     print(justiceLeague.name);
     print(justiceLeague.type);
+
+    //invocando el metodo reeincrito con @overrride
+    print(justiceLeague.toString());
 
     /*Intentamos instanciar la clase con solo el valor del tipo, que no lo permite porque la 
     propiedad de nombre es requerida*/ 
@@ -45,4 +48,9 @@ class Team
     String type;
     //El comnstructor de la clase simepre debe llavr el mismo nombre de la clase
     Team({required this.name, this.type="No definido."});
+    
+    @override
+    String toString(){
+        return 'Grupo: $name, Tipo: $type';
+    }
 }
