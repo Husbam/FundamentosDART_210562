@@ -17,6 +17,7 @@ Proyecto de Caso para la Unidad 1, de la Asignatura de Desarrollo Móvil Integra
 |8|Funciones|11|Finalizada|
 |9|Clases y Sobreescritura de métodos|9|Activa|
 |10|Constructores Nombrados|8|Activa|
+|11|Getters (Lectura Controlada) y Setters (Modificacion controlada)|9|Activa|
 
 ### LISTA DE HERRAMIENTAS
 ![DART](https://img.shields.io/badge/Dart-0175C2?style-for-the-badge&logo=dart&logoColor=white)
