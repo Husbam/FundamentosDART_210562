@@ -17,7 +17,7 @@ Proyecto de Caso para la Unidad 1, de la Asignatura de Desarrollo Móvil Integra
 |8|Funciones|11|Finalizada|
 |9|Clases y Sobreescritura de métodos|9|Finalizada|
 |10|Constructores Nombrados|8|Finalizada|
-|11|Getters (Lectura Controlada) y Setters (Modificacion controlada)|9|Finalizada|
+|11|Getters (Lectura Controlada) y Setters (Modificación controlada)|9|Finalizada|
 |12|Clases Abstractas|11|Activa|
 |Tarea 04|Uso de las clases abstractas en el caso de estudio|10|Activa|
 |13|Aserciones|3|Activa|
