@@ -1,20 +1,20 @@
-// Enum para Estatus Médico
-enum EstatusMedico { Vivo, Finado, Coma, Vegetativo }
-
 // Enum para Género
 enum Genero { M, F, NB }
 
 // Enum para Grupo Sanguíneo
 enum GrupoSanguineo {
-    APositivo, // A+
-    ANegativo, // A-
-    BPositivo, // B+
-    BNegativo, // B-
-    OPositivo, // O+
-    ONegativo, // O-
-    ABPositivo, // AB+
-    ABNegativo, // AB-
+    APositivo,
+    ANegativo,
+    BPositivo,
+    BNegativo,
+    OPositivo,
+    ONegativo,
+    ABPositivo,
+    ABNegativo,
 }
+
+// Enum para Estatus Médico
+enum EstatusMedico { Vivo, Finado, Coma, Vegetativo }
 
 // Clase abstracta Persona
 abstract class Persona {
@@ -105,10 +105,11 @@ class Paciente extends Persona implements Defuncion {
                -----------------------------------
                NSS: $nss
                Tipo de Seguro: $tipoSeguro
-               Estatus Médico: ${estatusMedico.toString().split('.').last}
+               Estatus Vida: ${estatusMedico.toString().split('.').last}
                Fecha de Alta: ${fechaAlta != null ? '${fechaAlta!.day.toString().padLeft(2, '0')}/${fechaAlta!.month.toString().padLeft(2, '0')}/${fechaAlta!.year} ${fechaAlta!.hour.toString().padLeft(2, '0')}:${fechaAlta!.minute.toString().padLeft(2, '0')}:${fechaAlta!.second.toString().padLeft(2, '0')}' : 'No disponible'}
                Fecha Última Cita: ${fechaUltimaCita != null ? '${fechaUltimaCita!.day.toString().padLeft(2, '0')}/${fechaUltimaCita!.month.toString().padLeft(2, '0')}/${fechaUltimaCita!.year} ${fechaUltimaCita!.hour.toString().padLeft(2, '0')}:${fechaUltimaCita!.minute.toString().padLeft(2, '0')}:${fechaUltimaCita!.second.toString().padLeft(2, '0')}' : 'No disponible'}
                Fecha de Modificación: ${fechaModificacion != null ? '${fechaModificacion!.day.toString().padLeft(2, '0')}/${fechaModificacion!.month.toString().padLeft(2, '0')}/${fechaModificacion!.year} ${fechaModificacion!.hour.toString().padLeft(2, '0')}:${fechaModificacion!.minute.toString().padLeft(2, '0')}:${fechaModificacion!.second.toString().padLeft(2, '0')}' : 'No disponible'}
+               Fecha de Registro: ${fechaRegistro.day.toString().padLeft(2, '0')}/${fechaRegistro.month.toString().padLeft(2, '0')}/${fechaRegistro.year} ${fechaRegistro.hour.toString().padLeft(2, '0')}:${fechaRegistro.minute.toString().padLeft(2, '0')}:${fechaRegistro.second.toString().padLeft(2, '0')}
                ------------------------------------
                """;
     }
@@ -173,7 +174,7 @@ void main() {
                           fechaNacimiento: DateTime(1995, 5, 12),
                           nss: "1122334455",
                           tipoSeguro: "Privado",
-                          fechaAlta: DateTime.now(),
+                          fechaRegistro: DateTime.now(),
                       );
     admon.crearPaciente(paciente1);
     print(paciente1);
@@ -189,7 +190,7 @@ void main() {
                           tipoSeguro: "Seguro Social",
                           fechaRegistro: DateTime(2023, 12, 1, 11, 05, 16), // Registro anterior
                           fechaModificacion: DateTime(2024, 4, 10, 17, 02, 28), // Fecha de modificación posterior
-                          fechaUltimaCita: DateTime.now(),
+                          fechaUltimaCita: DateTime(2024, 4, 10, 17, 02, 28),
                       );
     admon.crearPaciente(paciente2);
     print(paciente2);
@@ -203,14 +204,11 @@ void main() {
                           fechaNacimiento: DateTime(1957, 6, 14),
                           nss: "9988776655",
                           tipoSeguro: "Seguro Social",
-                          fechaAlta: DateTime(2023, 3, 22, 11, 05, 16),
                           fechaUltimaCita: DateTime(2024, 1, 10, 09, 45, 36),
-                          fechaModificacion: DateTime(2024, 2, 12, 22, 17, 36), // Fecha de modificación posterior
+                          fechaModificacion: DateTime(2024, 3, 12, 22, 17, 36), // Fecha de modificación posterior
+                          fechaRegistro: DateTime(2023, 3, 12, 22, 17, 36),
                       );
     admon.crearPaciente(paciente3);
     paciente3.registrarDefuncion();
     print(paciente3);
-
-    // Mostrar los pacientes registrados
-    admon.mostrarPacientes();
 }
