@@ -14,7 +14,7 @@ enum GrupoSanguineo {
 }
 
 // Enum para Estatus Médico
-enum EstatusMedico { Vivo, Finado, Coma, Vegetativo }
+enum EstatusVida { Vivo, Finado, Coma, Vegetativo }
 
 // Clase abstracta Persona
 abstract class Persona {
@@ -65,7 +65,7 @@ abstract class Defuncion {
 class Paciente extends Persona implements Defuncion {
     String nss;
     String tipoSeguro;
-    EstatusMedico estatusMedico;
+    EstatusVida estatusVida;
     DateTime? fechaAlta;
     DateTime? fechaUltimaCita;
     DateTime? fechaModificacion; // Nueva fecha de modificación
@@ -79,7 +79,7 @@ class Paciente extends Persona implements Defuncion {
         required DateTime fechaNacimiento,
         required this.nss,
         required this.tipoSeguro,
-        this.estatusMedico = EstatusMedico.Vivo,
+        this.estatusVida = EstatusVida.Vivo,
         this.fechaUltimaCita,
         DateTime? fechaAlta,
         DateTime? fechaRegistro,
@@ -105,7 +105,7 @@ class Paciente extends Persona implements Defuncion {
                -----------------------------------
                NSS: $nss
                Tipo de Seguro: $tipoSeguro
-               Estatus Vida: ${estatusMedico.toString().split('.').last}
+               Estatus Vida: ${estatusVida.toString().split('.').last}
                Fecha de Alta: ${fechaAlta != null ? '${fechaAlta!.day.toString().padLeft(2, '0')}/${fechaAlta!.month.toString().padLeft(2, '0')}/${fechaAlta!.year} ${fechaAlta!.hour.toString().padLeft(2, '0')}:${fechaAlta!.minute.toString().padLeft(2, '0')}:${fechaAlta!.second.toString().padLeft(2, '0')}' : 'No disponible'}
                Fecha Última Cita: ${fechaUltimaCita != null ? '${fechaUltimaCita!.day.toString().padLeft(2, '0')}/${fechaUltimaCita!.month.toString().padLeft(2, '0')}/${fechaUltimaCita!.year} ${fechaUltimaCita!.hour.toString().padLeft(2, '0')}:${fechaUltimaCita!.minute.toString().padLeft(2, '0')}:${fechaUltimaCita!.second.toString().padLeft(2, '0')}' : 'No disponible'}
                Fecha de Modificación: ${fechaModificacion != null ? '${fechaModificacion!.day.toString().padLeft(2, '0')}/${fechaModificacion!.month.toString().padLeft(2, '0')}/${fechaModificacion!.year} ${fechaModificacion!.hour.toString().padLeft(2, '0')}:${fechaModificacion!.minute.toString().padLeft(2, '0')}:${fechaModificacion!.second.toString().padLeft(2, '0')}' : 'No disponible'}
@@ -116,7 +116,7 @@ class Paciente extends Persona implements Defuncion {
 
     @override
     void registrarDefuncion() {
-        estatusMedico = EstatusMedico.Finado;
+        estatusVida = EstatusVida.Finado;
         estaActivo = false;
     }
 }
