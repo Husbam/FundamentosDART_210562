@@ -22,11 +22,11 @@ Proyecto de Caso para la Unidad 1, de la Asignatura de Desarrollo Móvil Integra
 |Tarea 04|Uso de las clases abstractas en el caso de estudio|10|✅Finalizada|
 |13|Aserciones|3|✅Finalizada|
 |14|Mixins|11|✅Finalizada|
-|15|Futures||Activa|
-|16|async_await||Activa|
-|17|try_catch_on_finally||Activa|
-|18|streams.dart||Activa|
-|19|stream_await||Activa|
+|15|Futures|5|Activa|
+|16|async_await|5|Activa|
+|17|try_catch_on_finally|6|Activa|
+|18|streams.dart|6|Activa|
+|19|stream_await|4|Activa|
 
 
 ### LISTA DE HERRAMIENTAS
